@@ -39,3 +39,29 @@ function play(cChoice, pChoice){
         return null;
     }
 }
+
+function game(){
+    let pScore = 0;
+    let cScore = 0;
+
+    for(let i = 0; i < 5; i++){
+        cChoice = getComputerChoice();
+        pChoice = prompt(message = "Enter your choice");
+        switch(play(cChoice, pChoice)){
+            case true:
+                pScore++;
+                break;
+            case false:
+                cScore++;
+                break;
+            default:
+                break;
+        }
+
+        setTimeout (1000);
+
+    }
+    console.log("The score is Player: " + pScore + " Computer: " + cScore);
+}
+
+game();
