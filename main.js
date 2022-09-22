@@ -15,19 +15,27 @@ function play(cChoice, pChoice){
 
     if(cChoice == pChoice){
         console.log("It's a tie!");
+        return null;
     } else if (cChoice === "rock" && pChoice === "paper"){
         console.log("You Win! Paper beats rock");
+        return true;
     }else if (cChoice === "scissors" && pChoice === "paper"){
         console.log("You lose! Scissors beats paper");
+        return false;
     }else if (cChoice === "rock" && pChoice === "scissors"){
         console.log("You lose! Rock beats scissors");
+        return false;
     }else if (cChoice === "paper" && pChoice === "scissors"){
         console.log("You win! Scissors beats paper");
+        return true;
     }else if (cChoice === "scissors" && pChoice === "rock"){
         console.log("You win! Rock beats scissors");
+        return true;
     }else if (cChoice === "paper" && pChoice === "rock"){
         console.log("You lose! Paper beats rock");
+        return false;
     }else{
         console.log("What happened here?");
+        return null;
     }
 }
