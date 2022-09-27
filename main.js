@@ -57,9 +57,6 @@ function game(){
             default:
                 break;
         }
-
-        setTimeout (1000);
-
     }
     console.log("The score is Player: " + pScore + " Computer: " + cScore);
 }
