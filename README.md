@@ -1,2 +1,2 @@
 # rock-paper-scissors
-Rock paper scissors in console with javascript.
+Rock paper scissors with buttons in javascript following the odin project.
